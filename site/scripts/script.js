@@ -35,13 +35,19 @@ window.log = function f() {
 /* jshint ignore:end */
 
 },{}],3:[function(require,module,exports){
-"use strict";
+'use strict';
 
 // Default Ready Function
 var Base = function init() {
   // Forces Correct Operating Context >= ES2015
 
-  $(function () {});
+  $(function () {
+    $('.js-slider').slick({
+      dots: true,
+      arrows: true,
+      slidesToShow: 1
+    });
+  });
 };
 Base();
 
