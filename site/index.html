@@ -66,6 +66,7 @@
 				<p class="section__copy">pQuisque mollis adipiscing adipiscing. Aenean gravida, sem ut egestas sagittis, purus magna rutrum est, dictum tempus massa neque quis dui. Maecenas sit amet est at velit vehicula luctus sit amet ut arcu. Duis mattis enim eget convallis volutpat. Duis pharetra viverra volutpat.</p>
 			</span>
 
+			<!-- Reveals/unreveals the copy displayed in the js-reveal block above on click -->
 			<a class="btn js-reveal-btn" title="Read More">Read More</a>
 		</div>
 	<!-- Section intro Ends -->	
@@ -75,6 +76,7 @@
 	<!-- Section Modal Starts -->
 		<div class="container">
 			<div class="modal__element">
+				<!-- Setting the modal popup text using the data attributes below when js-modal-open is clicked -->
 				<span class="modal__element-title">Image</span>
 				<button class="modal__button js-modal-open" data-title="Test 1 Title" data-copy="Test 1 Copy">
 					<span class="modal__button-inner">+</span>
@@ -115,12 +117,15 @@
 	<!-- Section Modal Ends -->
 	</div>
 
-	<div class="section section--breakout cf">
+	<div class="section section--breakout cf row">
 	<!-- Section Breakout Starts -->
-		<div class="container">
+		<div class="container cf">
 			<div class="section__grid section__grid--breakout">
 				<h4 class="section__title section__title--small">Breakout Area</h4>
 				<p class="section__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta.</p>
+			</div>
+			<div class="section__grid section__grid--breakout-right">
+				<div class="section__grid-box"></div>
 			</div>
 		</div>
 	<!-- Section Breakout Ends -->
@@ -129,10 +134,13 @@
 	<div class="section section--modal cf">
 	<!-- Section Modal Starts -->
 		<div class="container">
+
+			<h5 class="section__title section__title--modal-title">More Layouts</h2>
+
 			<div class="modal__element">
 				<span class="modal__element-title">Image</span>
 				<!-- Setting the modal popup text using the data attributes below when js-modal-open is clicked -->
-				<button class="modal__button js-modal-open" data-title="Test 1 Title" data-copy="Test 1 Copy">
+				<button class="modal__button js-modal-open" data-title="Test 5 Title" data-copy="Test 5 Copy">
 					<span class="modal__button-inner">+</span>
 				</button>
 			</div>
@@ -142,9 +150,17 @@
 			</div>
 
 			<div class="modal__divide">
+
+				<!-- Ran out of time to finish off the captions -->
+
+				<!-- <div class="modal__divide-caption">
+					<p class="section__title section__title-small">Image Caption</p>
+					<p class="section__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div> -->
 				<div class="modal__element">
+					<!-- Setting the modal popup text using the data attributes below when js-modal-open is clicked -->
 					<span class="modal__element-title">Image</span>
-					<button class="modal__button js-modal-open" data-title="Test 2 Title" data-copy="Test 2 Copy">
+					<button class="modal__button js-modal-open" data-title="Test 6 Title" data-copy="Test 6 Copy">
 						<span class="modal__button-inner">+</span>
 					</button>
 				</div>
@@ -153,7 +169,7 @@
 					<div class="section__grid">
 						<div class="modal__element">
 							<span class="modal__element-title">Image</span>
-							<button class="modal__button js-modal-open" data-title="Test 3 Title" data-copy="Test 3 Copy">
+							<button class="modal__button js-modal-open" data-title="Test 7 Title" data-copy="Test 7 Copy">
 								<span class="modal__button-inner">+</span>
 							</button>
 						</div>
@@ -161,7 +177,7 @@
 					<div class="section__grid">
 						<div class="modal__element">
 							<span class="modal__element-title">Image</span>
-							<button class="modal__button js-modal-open" data-title="Test 4 Title" data-copy="Test 4 Copy">
+							<button class="modal__button js-modal-open" data-title="Test 8 Title" data-copy="Test 8 Copy">
 								<span class="modal__button-inner">+</span>
 							</button>
 						</div>
@@ -208,14 +224,17 @@
 	</div>
 
 	<div class="footer cf">
+	<!-- Footer Starts -->
 		<div class="container">
 			<div class="footer__wrapper">
 				<p class="footer__copy">(c) AMICULUM digital 2018</p>
 			</div>
 		</div>
+	<!-- Footer Ends -->
 	</div>
 
 	<div class="modal__popup js-popup">
+	<!-- Modal Window/Popup Starts - This is only displayed once the user clicks on each of the + buttons for each box -->
 		<div class="modal__popup-inner">
 			<button class="modal__button modal__button--close js-close">
 				<span class="modal__button-inner modal__button-inner--close">x</span>
@@ -223,6 +242,7 @@
 			<h1 class="section__title section__title--modal js-modal-title">Modal</h1>
 			<p class="section__copy js-modal-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta.</p>
 		</div>
+	<!-- Modal Window/Popup Ends -->
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
