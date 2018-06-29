@@ -40,9 +40,45 @@
             }
         }
     }
+    &__element {
+        background-color: $col-shade-grey;
+        height: 100%;
+        min-height: 200px;
+        position: relative;
+        width: 100%;
+        @include breakpoint(medium) {
+            min-height: 400px;
+        }
+        @include breakpoint(large) {
+            min-height: 500px;
+        }
+        &-title {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-transform: uppercase;
+        }
+        &-caption {
+            border-top: 1px solid $col-white;
+            left: 0;
+            position: absolute;
+            padding: 1rem;
+            top: 0;
+        }
+    }
+    &__divide {
+        @include breakpoint(medium) {
+            clear: both;
+            max-width: 70%;
+            float: right;
+            width: 100%;
+        }
+    }
    &__popup {
        background-color: rgba($col-bg, .8);
        bottom: 0;
+       display: none;
        position: fixed;
        top: 0;
        left: 0;
