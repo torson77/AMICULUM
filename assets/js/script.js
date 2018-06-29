@@ -31,10 +31,10 @@ const Base = function init() {
       e.preventDefault();
       let $this = $(this);
       if(!$(this).hasClass('active')) {
-        $this.addClass('active').html('Close');
+        $this.addClass('active').html('Close').attr('title', 'Close');
         $revealElement.stop().slideDown();
       } else {
-        $this.removeClass('active').html('Read More');
+        $this.removeClass('active').html('Read More').attr('title', 'Read More');
         $revealElement.stop().slideUp();
       }
     });
