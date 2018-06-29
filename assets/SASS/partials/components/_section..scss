@@ -25,7 +25,7 @@
     }
     &__title {
         margin: 0 auto;
-        font-size: 3rem;
+        font-size: 2rem;
         text-transform: uppercase;
         text-align: center;
         letter-spacing: 2px;
@@ -46,6 +46,12 @@
         &--modal {
             font-size: 2rem;
             margin-bottom: 1rem;
+            &-title {
+                margin-bottom: 2rem;
+                @include breakpoint(medium) {
+                    font-size: 5rem;
+                }
+            }
         }
         &--small {
             font-size: 1.4rem;
@@ -58,6 +64,19 @@
                 margin-bottom: 1rem;
                 text-align: center;
             }
+            .section--breakout & {
+                padding-top: 2rem;
+                margin-bottom: 2rem;
+                position: relative;
+                &:before {
+                    content: "";
+                    width: 15%;
+                    height: 2px;
+                    background-color: $col-light-grey;
+                    position: absolute;
+                    bottom: -1rem;
+                }
+            }
         }
     }
     &__hide {
@@ -68,7 +87,6 @@
         &:first-child {
             margin-top: 0;
         }
-
         width: 100%;
         @include breakpoint(medium) {
             float: left;
@@ -85,10 +103,29 @@
         &-split {
             margin: 1rem auto;
         }
+        &-box {
+            background-color: $col-light-grey;
+            min-height: 300px;
+            height: 100%;
+            width: 100%;
+            @include breakpoint(medium) {
+                min-height: 400px;
+            }
+        }
         &--breakout {
             @include breakpoint(medium) {
                 margin-right: 2%;
-                max-width: 47%;
+                max-width: 37%;
+            }
+            &-right {
+                @include breakpoint(medium) {
+                    max-width: 60%;
+                    margin-bottom: -4rem;
+                    transform: translateX(5%);
+                }
+                @include breakpoint(large) {
+                    transform: translateX(10%);
+                }
             }
         }
     }
