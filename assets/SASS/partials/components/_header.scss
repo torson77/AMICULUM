@@ -31,7 +31,7 @@
         margin: 0;
         text-transform: uppercase;
         @include breakpoint(medium) {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
     &__logo {
