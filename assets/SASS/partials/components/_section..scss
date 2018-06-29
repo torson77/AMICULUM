@@ -1,0 +1,115 @@
+.section {
+    color: $col-white;
+    padding: 2rem 1rem; 
+    @include breakpoint(medium) {
+        padding: 4rem 0;
+    }
+    &--intro {
+        text-align: center;
+    }
+    &--breakout {
+        background-color: $col-white;
+        color: $col-light-grey;
+    }
+    &--topics {
+        border-top: 1px solid rgba($col-light-grey, .4);
+    }
+    &__copy {
+        &--parent {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+        &--center {
+            text-align: center;
+        }
+    }
+    &__title {
+        margin: 0 auto;
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px;
+        @include breakpoint(medium) {
+            font-size: 5rem;
+        }
+        &--topic {
+            font-size: 1rem;
+            margin-bottom: .4rem;
+        }
+        &--sub {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            span {
+                text-transform: lowercase;
+            }
+        }
+        &--modal {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        &--small {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            @include breakpoint(medium) {
+                text-align: left;
+            }
+            &-center {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+        }
+    }
+    &__hide {
+        display: none !important;
+        &.active {
+            display: block;
+        }
+    }
+    &__grid {
+        width: 100%;
+        @include breakpoint(medium) {
+            max-width: 48%;
+        }
+        &--breakout {
+            @include breakpoint(medium) {
+                margin-right: 2%;
+                max-width: 47%;
+            }
+        }
+    }
+    &__wrapper {
+        margin: 0 auto 2rem;
+        text-align: center;
+    }
+    &__list {
+        &-item {
+            &:first-child {
+                margin-top: 0;
+            }
+            margin: 1rem 0;
+            width: 100%;
+            @include breakpoint(medium) {
+                float: left;
+                margin: 1%;
+                width: 31.333333%;
+                &:first-child {
+                    margin-left: 0;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+
+            }
+            @include breakpoint(large) {
+                width: 23.33333%;
+            }
+        }
+        &-image-box {
+            background-color: $col-light-grey;
+            height: 160px;
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+    }
+}
