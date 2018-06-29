@@ -26,12 +26,14 @@
     }
     &__title {
         color: inherit;
+        display: inline-block;
         font-weight: normal;
         font-size: 1.4rem;
-        margin: 0;
+        margin: 1rem auto 0;
         text-transform: uppercase;
         @include breakpoint(medium) {
             font-size: 1.8rem;
+            margin: 0 auto;
         }
     }
     &__logo {
