@@ -10,7 +10,7 @@
 
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Development Task</title>
+	<title>AMICULUM Development Task</title>
 	<script>document.documentElement.className += ' advanced';</script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="stylesheet" href="/css/style.css" media="screen">
@@ -35,6 +35,7 @@
 	<div class="slider cf">
 	<!-- Slider Section Starts -->
 		<div class="container">
+			<!-- I've used the Slick slider plugin as it's a reliable slider and let's me focus on more of the design structure within certain time constraints, simpley targeted through the js-slider class -->
 			<ul class="slider__outer js-slider">
 				<li class="slider__inner">
 					Featured Slide 1
@@ -74,10 +75,42 @@
 	<!-- Section Modal Starts -->
 		<div class="container">
 			<div class="modal__element">
-				<button class="modal__button">
+				<span class="modal__element-title">Image</span>
+				<button class="modal__button js-modal-open" data-title="Test 1 Title" data-copy="Test 1 Copy">
 					<span class="modal__button-inner">+</span>
 				</button>
 			</div>
+			<div class="section__wrapper section__wrapper--modal">
+				<h3 class="section__title section__title--small-center">Modal</h3>
+				<p class="section__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta.</p>
+			</div>
+
+			<div class="modal__element">
+				<span class="modal__element-title">Image</span>
+				<button class="modal__button js-modal-open" data-title="Test 2 Title" data-copy="Test 2 Copy">
+					<span class="modal__button-inner">+</span>
+				</button>
+			</div>
+
+			<div class="section__grid-split cf">
+				<div class="section__grid">
+					<div class="modal__element">
+						<span class="modal__element-title">Image</span>
+						<button class="modal__button js-modal-open" data-title="Test 3 Title" data-copy="Test 3 Copy">
+							<span class="modal__button-inner">+</span>
+						</button>
+					</div>
+				</div>
+				<div class="section__grid">
+					<div class="modal__element">
+						<span class="modal__element-title">Image</span>
+						<button class="modal__button js-modal-open" data-title="Test 4 Title" data-copy="Test 4 Copy">
+							<span class="modal__button-inner">+</span>
+						</button>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	<!-- Section Modal Ends -->
 	</div>
@@ -91,6 +124,53 @@
 			</div>
 		</div>
 	<!-- Section Breakout Ends -->
+	</div>
+
+	<div class="section section--modal cf">
+	<!-- Section Modal Starts -->
+		<div class="container">
+			<div class="modal__element">
+				<span class="modal__element-title">Image</span>
+				<!-- Setting the modal popup text using the data attributes below when js-modal-open is clicked -->
+				<button class="modal__button js-modal-open" data-title="Test 1 Title" data-copy="Test 1 Copy">
+					<span class="modal__button-inner">+</span>
+				</button>
+			</div>
+			<div class="section__wrapper section__wrapper--modal">
+				<h3 class="section__title section__title--small-center">Modal</h3>
+				<p class="section__copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit ullamcorper dui et congue. Vivamus dignissim nisi vel mollis porta.</p>
+			</div>
+
+			<div class="modal__divide">
+				<div class="modal__element">
+					<span class="modal__element-title">Image</span>
+					<button class="modal__button js-modal-open" data-title="Test 2 Title" data-copy="Test 2 Copy">
+						<span class="modal__button-inner">+</span>
+					</button>
+				</div>
+	
+				<div class="section__grid-split cf">
+					<div class="section__grid">
+						<div class="modal__element">
+							<span class="modal__element-title">Image</span>
+							<button class="modal__button js-modal-open" data-title="Test 3 Title" data-copy="Test 3 Copy">
+								<span class="modal__button-inner">+</span>
+							</button>
+						</div>
+					</div>
+					<div class="section__grid">
+						<div class="modal__element">
+							<span class="modal__element-title">Image</span>
+							<button class="modal__button js-modal-open" data-title="Test 4 Title" data-copy="Test 4 Copy">
+								<span class="modal__button-inner">+</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	<!-- Section Modal Ends -->
 	</div>
 
 	<div class="section section--topics cf">
@@ -135,9 +215,9 @@
 		</div>
 	</div>
 
-	<div class="modal__popup">
+	<div class="modal__popup js-popup">
 		<div class="modal__popup-inner">
-			<button class="modal__button modal__button--close">
+			<button class="modal__button modal__button--close js-close">
 				<span class="modal__button-inner modal__button-inner--close">x</span>
 			</button>
 			<h1 class="section__title section__title--modal js-modal-title">Modal</h1>
