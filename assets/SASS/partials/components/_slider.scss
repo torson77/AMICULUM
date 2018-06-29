@@ -1,0 +1,13 @@
+.slider {
+    &__outer {
+
+    }
+    &__inner {
+        background-color: $col-shade-grey;
+        color: $col-white;
+        padding: 10rem 2rem;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+    }
+}
